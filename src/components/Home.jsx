@@ -4,11 +4,15 @@ import NavBar from "./NavBar"
 export class Home extends Component {
     render() {
         return (
-            <div>
+            <div id="home">
                 <NavBar accountBalance={this.props.accountBalance} />
-                <h1>Home</h1>
 
-                
+                <div className="container">
+                    <h1>Home</h1>
+                    <h5>Credit: {this.props.totalCredit}</h5>
+                    <h5>Debit: {this.props.totalDebit}</h5>
+                    <h5>Account Balance: {this.props.accountBalance}</h5>
+                </div>                                
             </div>
         )
     }

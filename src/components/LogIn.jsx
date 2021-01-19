@@ -38,21 +38,22 @@ export class LogIn extends Component {
         }
         
         return (
-            <div>
+            <div id="login">
                 <NavBar accountBalance={this.props.accountBalance} />
-                <h1>LogIn</h1>
+
+                <div className="container">
+                    <h1>LogIn</h1>
                 
-                <form onSubmit={this.handleSubmit}>
-                    <div>
-                        <label htmlFor="userName">User Name</label>
-                        <input type="text" name="userName" onChange={this.handleChange} value={this.state.user.userName} />
-                    </div>
-                    <div>
-                        <label htmlFor="password">Password</label>
-                        <input type="password" name="password" />
-                    </div>
-                    <button>Log In</button>
-                </form>
+                    <form onSubmit={this.handleSubmit}>
+                        <div>
+                            <input type="text" name="userName" onChange={this.handleChange} value={this.state.user.userName} placeholder="username" />
+                        </div>
+                        <div>
+                            <input type="password" name="password" placeholder="password" />
+                        </div>
+                        <button id="loginbtn">Log In</button>
+                    </form>
+                </div>
             </div>
         )
     }

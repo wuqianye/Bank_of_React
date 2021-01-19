@@ -1,3 +1,33 @@
 .App {
   text-align: center;
 }
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    margin: 20px auto 20px auto !important;
+}
+form {
+    padding: 40px;
+    border: 1px solid;
+}
+input {
+    font-size: 20px !important;
+    padding: 4px;
+    margin: 10px !important;
+}
+#loginbtn {
+    color: #ffffff;
+    background-color: #343a40;
+    font-size: 20px;
+    padding: 8px;
+    margin: 10px;
+    border: 0px;
+    border-radius: 8px;
+}
+.displayCards {
+    padding: 20px;
+    border: 1px solid;
+}
